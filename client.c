@@ -6,7 +6,7 @@
 /*   By: nlewicki <nlewicki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 09:57:48 by nlewicki          #+#    #+#             */
-/*   Updated: 2024/04/30 14:19:38 by nlewicki         ###   ########.fr       */
+/*   Updated: 2024/05/03 11:11:32 by nlewicki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char	*fill_len(int len)
 {
 	char	*leng_para;
-	int	i;
+	int		i;
 
 	i = 9;
 	leng_para = strdup("0000000000");
@@ -52,7 +52,7 @@ int	send_length(int pid, char *len)
 	return (0);
 }
 
-int	send_message (int pid, char *message)
+int	send_message(int pid, char *message)
 {
 	int		i;
 	int		j;
@@ -89,6 +89,5 @@ int	main(int argc, char *argv[])
 		return (1);
 	}
 	send_message(ft_atoi(argv[1]), argv[2]);
-	// system("leaks client");
 	return (0);
 }
