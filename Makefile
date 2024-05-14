@@ -6,7 +6,7 @@
 #    By: nlewicki <nlewicki@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/23 09:58:18 by nlewicki          #+#    #+#              #
-#    Updated: 2024/04/30 13:30:39 by nlewicki         ###   ########.fr        #
+#    Updated: 2024/05/08 09:03:37 by nlewicki         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,12 +27,11 @@ ${NAME}: libft printf $(CLIENT_EXE) $(SERVER_EXE)
 	@echo "\033[32mCompilation done\033[0m"
 	@sleep 2
 	@clear
-	@./server
 
-client: $(CLIENT) $(LIBFT)
+client: $(CLIENT) $(LIBFT) $(PRINTF)
 	@$(CC) $(CFLAGS) $(CLIENT) $(LIBFT) $(PRINTF) -o $(CLIENT_EXE)
 
-server: $(SERVER) $(LIBFT)
+server: $(SERVER) $(LIBFT) $(PRINTF)
 	@$(CC) $(CFLAGS) $(SERVER) $(LIBFT) $(PRINTF) -o $(SERVER_EXE)
 
 printf:

@@ -6,7 +6,7 @@
 /*   By: nlewicki <nlewicki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 09:57:48 by nlewicki          #+#    #+#             */
-/*   Updated: 2024/05/03 11:11:32 by nlewicki         ###   ########.fr       */
+/*   Updated: 2024/05/07 12:34:24 by nlewicki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,14 @@ char	*fill_len(int len)
 	int		i;
 
 	i = 9;
-	leng_para = strdup("0000000000");
+	leng_para = ft_strdup("0000000000");
 	while (i >= 0)
 	{
 		leng_para[i] = (len % 10) + '0';
 		len /= 10;
 		i--;
 	}
-	printf("leng_para: %s\n", leng_para);
+	ft_printf("leng_para: %s\n", leng_para);
 	return (leng_para);
 }
 
