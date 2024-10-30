@@ -6,11 +6,12 @@
 /*   By: nlewicki <nlewicki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 09:57:48 by nlewicki          #+#    #+#             */
-/*   Updated: 2024/05/07 12:34:24 by nlewicki         ###   ########.fr       */
+/*   Updated: 2024/05/27 13:01:11 by nlewicki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minitalk.h"
+// ft_printf("leng_para: %s\n", leng_para);
 
 char	*fill_len(int len)
 {
@@ -25,7 +26,6 @@ char	*fill_len(int len)
 		len /= 10;
 		i--;
 	}
-	ft_printf("leng_para: %s\n", leng_para);
 	return (leng_para);
 }
 
