@@ -6,7 +6,7 @@
 /*   By: nlewicki <nlewicki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/29 10:34:22 by nlewicki          #+#    #+#             */
-/*   Updated: 2024/05/27 13:35:27 by nlewicki         ###   ########.fr       */
+/*   Updated: 2024/10/30 10:00:49 by nlewicki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 # define MINITALK_H
 
 # include <signal.h>
-# include "libft/libft.h"
-# include "ft_printf/ft_printf.h"
+# include "../lib/libft/libft.h"
+# include "../lib/ft_printf/ft_printf.h"
 
 typedef struct t_server
 {

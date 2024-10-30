@@ -6,11 +6,11 @@
 /*   By: nlewicki <nlewicki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 09:57:55 by nlewicki          #+#    #+#             */
-/*   Updated: 2024/05/27 13:04:35 by nlewicki         ###   ########.fr       */
+/*   Updated: 2024/10/30 10:01:09 by nlewicki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "minitalk.h"
+#include "include/minitalk.h"
 
 void	procces_bits(int sig, t_server_state *info)
 {

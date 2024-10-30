@@ -6,7 +6,7 @@
 #    By: nlewicki <nlewicki@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/12 11:07:18 by nlewicki          #+#    #+#              #
-#    Updated: 2024/05/27 12:37:19 by nlewicki         ###   ########.fr        #
+#    Updated: 2024/10/30 09:53:34 by nlewicki         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -62,15 +62,15 @@ OFILES   = $(files:.c=.o)
 NAME     = libft.a
 
 $(NAME): $(OFILES)
-	ar rsc $(NAME) $(OFILES)
+	@ar rsc $(NAME) $(OFILES)
 
 all: $(NAME)
 
 clean:
-	rm -f $(OFILES) $(bonus:.c=.o)
+	@rm -f $(OFILES) $(bonus:.c=.o)
 
 fclean: clean
-	rm -f $(NAME)
+	@rm -f $(NAME)
 
 re: fclean all
 
